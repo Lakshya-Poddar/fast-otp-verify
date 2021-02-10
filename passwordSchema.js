@@ -6,8 +6,12 @@ const passwordSchema = new mongoose.Schema({
     required: true,
   },
   otp: {
-    type: Number,
+    type: String,
     required: true,
+  },
+  date: {
+    type: Date,
+    default: Date.now,
   },
 });
 
